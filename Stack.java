@@ -2,6 +2,8 @@ import java.lang.StringBuilder;
 
 /**
  * Stack implemented with a fixed length array
+ * push(int i) - O(1)
+ * pop() - O(1)
  */
 public class Stack {
     private int[] data;
