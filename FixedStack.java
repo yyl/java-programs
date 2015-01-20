@@ -5,12 +5,12 @@ import java.lang.StringBuilder;
  * push(int i) - O(1)
  * pop() - O(1)
  */
-public class Stack {
+public class FixedStack {
     private int[] data;
     private int cur;
     private int size;
 
-    public Stack(int size) {
+    public FixedStack(int size) {
         this.size = size;
         this.data = new int[this.size];
         this.cur = -1;
@@ -44,7 +44,7 @@ public class Stack {
     }
 
     public static void main(String args[]) {
-        Stack stack = new Stack(1);
+        FixedStack stack = new FixedStack(1);
         stack.push(1);
         stack.pop();
         stack.push(2);
